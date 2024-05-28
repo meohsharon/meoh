@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="theme-color" content="#1975ff" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v2.6.1/mapbox-gl.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.2/mapbox-gl-geocoder.css"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-draw/v1.3.0/mapbox-gl-draw.css" type="text/css">
+    <title>MeOH: Marine Fuel Carbon Intensity Life Cycle Data Domain</title>
+    <meta
+      name="description"
+      content="High performance React template built with lots of powerful Material-UI components across multiple product niches for fast & perfect apps development processes."
+    />
+    <meta
+      name="keywords"
+      content="material-ui, admin dashboard, admin template, react, react template, react admin template, react dashboard, react admin panel"
+    />
+  </head>
+
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+  </body>
+
+  <script type="text/javascript">
+    function on(eventType, selector, callback) {
+      document.body.addEventListener(eventType, function (event) {
+        if (event.target.matches(selector)) {
+          callback.call(event.target, event);
+        }
+      });
+    }
+
+    on('mousedown', '.disableDoubleClickTextSelection', function (event) {
+      if (event && event.detail > 1) {
+        event.preventDefault();
+      }
+    });
+
+    document.onkeydown = function(e) {
+      if (e.key === "Escape") { // escape key maps to keycode `27`
+        var mapbox_esc_callback = window.mapbox_esc_callback;
+        if ( mapbox_esc_callback && typeof mapbox_esc_callback === "function") {
+          mapbox_esc_callback();
+        }
+      }
+      if (e.key === "Enter") {
+        var mapbox_enter_callback = window.mapbox_enter_callback;
+        if ( mapbox_enter_callback && typeof mapbox_enter_callback === "function") {
+          mapbox_enter_callback();
+        }
+      }
+    };
+  </script>
+</html>

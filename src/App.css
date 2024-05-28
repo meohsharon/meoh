@@ -1,0 +1,65 @@
+.mapboxgl-ctrl-logo {
+  display: none !important;
+}
+.mapboxgl-ctrl-attrib-inner {
+  display: none !important;
+}
+.custom-style-mapbox-popup.mapboxgl-popup-anchor-bottom .mapboxgl-popup-tip {
+  border-top-color: rgba(255, 0, 0, 0.8);
+}
+.custom-style-mapbox-popup.mapboxgl-popup-anchor-top .mapboxgl-popup-tip {
+  border-bottom-color: rgba(255, 0, 0, 0.8);
+}
+.custom-style-mapbox-popup.mapboxgl-popup-anchor-left .mapboxgl-popup-tip {
+  border-right-color: rgba(255, 0, 0, 0.8);
+}
+.custom-style-mapbox-popup.mapboxgl-popup-anchor-right .mapboxgl-popup-tip {
+  border-left-color: rgba(255, 0, 0, 0.8);
+}
+.custom-style-mapbox-popup .mapboxgl-popup-content {
+  background: rgba(255, 0, 0, .8);
+}
+
+table.tooltip-table {
+  width: 100%;
+  border: 1px solid black;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+table.tooltip-table, .tooltip-table th, .tooltip-table td {
+  border: 1px solid black;
+  overflow: hidden; /* Hide overflow text */
+  white-space: nowrap; /* Prevent text from wrapping */
+  text-overflow: ellipsis; /* Show ellipsis (...) when text overflows */
+}
+
+.filter-react-multi-select {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+.filter-react-multi-select .dropdown-container {
+  padding: 5px 0;
+  width: 200px;
+  background: none!important;
+}
+.filter-react-multi-select.filter-react-multi-select-300px .dropdown-container {
+  width: 300px;
+}
+.filter-react-multi-select .dropdown-content .options{
+  max-height: 70vh;
+}
+
+.pageContainer1 {
+  margin: 0 auto; 
+  padding-top: 10px;
+  position: relative;
+}
+.pageHeader1 {
+  position: relative;
+}
+.pageHeader1 .backBtn1 {
+  position: absolute;
+  top: 0;
+}
